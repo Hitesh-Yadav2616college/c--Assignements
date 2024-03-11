@@ -32,15 +32,15 @@ class sample {
 public:
     char *name;
     sample() { }
-    sample(const char *str, int length) {
+    sample(char *str, int length) {
         name = new char[length + 1];
         strcpy(name, str);
     }
     // Copy constructor for deep copy
-    sample(const sample &other) {
-        int length = strlen(other.name);
+    sample(const sample &o) {
+        int length = strlen(o.name);
         name = new char[length + 1];
-        strcpy(name, other.name);
+        strcpy(name, o.name);
     }
 };
 

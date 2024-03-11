@@ -51,8 +51,8 @@ public:
 };
 
 int main() {
-    User user1("Alice", 1990, 15, 5, 50000);
-    User user2("Bob", 1995, 20, 10, 60000);
+    User user1("Hitesh", 1990, 15, 5, 50000);
+    User user2("Rohan", 1995, 20, 10, 60000);
 
     int result = user1 == user2;
     cout << "Comparison Result: " << result << endl;
